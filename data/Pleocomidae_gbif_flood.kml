@@ -1,0 +1,3675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Folder>
+	<name>Pleocomidae_gbif_flood</name>
+	<open>1</open>
+	<Document>
+		<name>Pleocomidae_gbif_flood.csv</name>
+		<Schema name="rainbeetles_GBIF20231110" id="S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+			<SimpleField type="double" name="gbifID"><displayName>&lt;b&gt;gbifID&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="family"><displayName>&lt;b&gt;family&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="species"><displayName>&lt;b&gt;species&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="infraspecificEpithet"><displayName>&lt;b&gt;infraspecificEpithet&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="sex"><displayName>&lt;b&gt;sex&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="eventDate"><displayName>&lt;b&gt;eventDate&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="double" name="decimalLatitude"><displayName>&lt;b&gt;decimalLatitude&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="double" name="decimalLongitude"><displayName>&lt;b&gt;decimalLongitude&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="coordinateUncertaintyInMeters"><displayName>&lt;b&gt;coordinateUncertaintyInMeters&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="int" name="elevation"><displayName>&lt;b&gt;elevation&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="locality"><displayName>&lt;b&gt;locality&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="newLocalityScale"><displayName>&lt;b&gt;newLocalityScale&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="institutionCode"><displayName>&lt;b&gt;institutionCode&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="references"><displayName>&lt;b&gt;references&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="occurrenceRemarks"><displayName>&lt;b&gt;occurrenceRemarks&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="identificationRemarks"><displayName>&lt;b&gt;identificationRemarks&lt;/b&gt;</displayName>
+</SimpleField>
+		</Schema>
+		<Style id="hlightPointStyle">
+			<IconStyle>
+				<color>ffacfaff</color>
+				<scale>1.4</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/shapes/euro.png</href>
+				</Icon>
+				<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+			</IconStyle>
+			<BalloonStyle>
+				<text><![CDATA[<table border="0">
+  <tr><td><b>gbifID</b></td><td>$[rainbeetles_GBIF20231110/gbifID]</td></tr>
+  <tr><td><b>family</b></td><td>$[rainbeetles_GBIF20231110/family]</td></tr>
+  <tr><td><b>species</b></td><td>$[rainbeetles_GBIF20231110/species]</td></tr>
+  <tr><td><b>infraspecificEpithet</b></td><td>$[rainbeetles_GBIF20231110/infraspecificEpithet]</td></tr>
+  <tr><td><b>sex</b></td><td>$[rainbeetles_GBIF20231110/sex]</td></tr>
+  <tr><td><b>eventDate</b></td><td>$[rainbeetles_GBIF20231110/eventDate]</td></tr>
+  <tr><td><b>decimalLatitude</b></td><td>$[rainbeetles_GBIF20231110/decimalLatitude]</td></tr>
+  <tr><td><b>decimalLongitude</b></td><td>$[rainbeetles_GBIF20231110/decimalLongitude]</td></tr>
+  <tr><td><b>coordinateUncertaintyInMeters</b></td><td>$[rainbeetles_GBIF20231110/coordinateUncertaintyInMeters]</td></tr>
+  <tr><td><b>elevation</b></td><td>$[rainbeetles_GBIF20231110/elevation]</td></tr>
+  <tr><td><b>locality</b></td><td>$[rainbeetles_GBIF20231110/locality]</td></tr>
+  <tr><td><b>newLocalityScale</b></td><td>$[rainbeetles_GBIF20231110/newLocalityScale]</td></tr>
+  <tr><td><b>institutionCode</b></td><td>$[rainbeetles_GBIF20231110/institutionCode]</td></tr>
+  <tr><td><b>references</b></td><td>$[rainbeetles_GBIF20231110/references]</td></tr>
+  <tr><td><b>occurrenceRemarks</b></td><td>$[rainbeetles_GBIF20231110/occurrenceRemarks]</td></tr>
+  <tr><td><b>identificationRemarks</b></td><td>$[rainbeetles_GBIF20231110/identificationRemarks]</td></tr>
+</table>
+]]></text>
+			</BalloonStyle>
+			<ListStyle>
+			</ListStyle>
+		</Style>
+		<Style id="normPointStyle">
+			<IconStyle>
+				<color>ffacfaff</color>
+				<scale>1.2</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/shapes/euro.png</href>
+				</Icon>
+				<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+			</IconStyle>
+			<BalloonStyle>
+				<text><![CDATA[<table border="0">
+  <tr><td><b>gbifID</b></td><td>$[rainbeetles_GBIF20231110/gbifID]</td></tr>
+  <tr><td><b>family</b></td><td>$[rainbeetles_GBIF20231110/family]</td></tr>
+  <tr><td><b>species</b></td><td>$[rainbeetles_GBIF20231110/species]</td></tr>
+  <tr><td><b>infraspecificEpithet</b></td><td>$[rainbeetles_GBIF20231110/infraspecificEpithet]</td></tr>
+  <tr><td><b>sex</b></td><td>$[rainbeetles_GBIF20231110/sex]</td></tr>
+  <tr><td><b>eventDate</b></td><td>$[rainbeetles_GBIF20231110/eventDate]</td></tr>
+  <tr><td><b>decimalLatitude</b></td><td>$[rainbeetles_GBIF20231110/decimalLatitude]</td></tr>
+  <tr><td><b>decimalLongitude</b></td><td>$[rainbeetles_GBIF20231110/decimalLongitude]</td></tr>
+  <tr><td><b>coordinateUncertaintyInMeters</b></td><td>$[rainbeetles_GBIF20231110/coordinateUncertaintyInMeters]</td></tr>
+  <tr><td><b>elevation</b></td><td>$[rainbeetles_GBIF20231110/elevation]</td></tr>
+  <tr><td><b>locality</b></td><td>$[rainbeetles_GBIF20231110/locality]</td></tr>
+  <tr><td><b>newLocalityScale</b></td><td>$[rainbeetles_GBIF20231110/newLocalityScale]</td></tr>
+  <tr><td><b>institutionCode</b></td><td>$[rainbeetles_GBIF20231110/institutionCode]</td></tr>
+  <tr><td><b>references</b></td><td>$[rainbeetles_GBIF20231110/references]</td></tr>
+  <tr><td><b>occurrenceRemarks</b></td><td>$[rainbeetles_GBIF20231110/occurrenceRemarks]</td></tr>
+  <tr><td><b>identificationRemarks</b></td><td>$[rainbeetles_GBIF20231110/identificationRemarks]</td></tr>
+</table>
+]]></text>
+			</BalloonStyle>
+			<ListStyle>
+			</ListStyle>
+		</Style>
+		<StyleMap id="pointStyleMap">
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#normPointStyle</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#hlightPointStyle</styleUrl>
+			</Pair>
+		</StyleMap>
+		<Folder id="layer 0">
+			<name>rainbeetles_GBIF20231110</name>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.42119e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2023-10-02T10:15:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6367</SimpleData>
+						<SimpleData name="decimalLongitude">-123.296</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">15</SimpleData>
+						<SimpleData name="elevation">292</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/185974080</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.295864,44.636665,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.42413e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2023-10-03T13:49:00</SimpleData>
+						<SimpleData name="decimalLatitude">45.3316</SimpleData>
+						<SimpleData name="decimalLongitude">-123.095</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">372</SimpleData>
+						<SimpleData name="elevation">141</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/186192220</SimpleData>
+						<SimpleData name="occurrenceRemarks">Found by co-worker Anthony Barajas.</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.094723,45.331568,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.42462e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2023-10-09T12:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">45.4851</SimpleData>
+						<SimpleData name="decimalLongitude">-123.234</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">4</SimpleData>
+						<SimpleData name="elevation">95</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/186885017</SimpleData>
+						<SimpleData name="occurrenceRemarks">beetle at Hagg Lake</SimpleData>
+						<SimpleData name="identificationRemarks">Nice male and female .</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.233672,45.48513099999999,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.43052e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2023-10-11T10:21:23</SimpleData>
+						<SimpleData name="decimalLatitude">44.6372</SimpleData>
+						<SimpleData name="decimalLongitude">-123.295</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">47</SimpleData>
+						<SimpleData name="elevation">289</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/187150498</SimpleData>
+						<SimpleData name="occurrenceRemarks">Please suggest the subspecies of it. Thanks.</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.295403,44.63719900000002,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.43067e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma simi</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2023-10-15T13:06:30</SimpleData>
+						<SimpleData name="decimalLatitude">43.799</SimpleData>
+						<SimpleData name="decimalLongitude">-122.426</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">NA</SimpleData>
+						<SimpleData name="elevation">699</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/187689872</SimpleData>
+						<SimpleData name="occurrenceRemarks">Moving slow. About 1&quot; long. It kept flipping upside down. I righted it a couple of times, then let it be.</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-122.426485,43.79902800000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.43066e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">FEMALE</SimpleData>
+						<SimpleData name="eventDate">2023-10-16T12:06:19</SimpleData>
+						<SimpleData name="decimalLatitude">44.6387</SimpleData>
+						<SimpleData name="decimalLongitude">-123.295</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">47</SimpleData>
+						<SimpleData name="elevation">276</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/187817148</SimpleData>
+						<SimpleData name="occurrenceRemarks">Males being attracted to a single female under the ground</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.294602,44.63873900000002,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.9477e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2022-10-23T09:19:33</SimpleData>
+						<SimpleData name="decimalLatitude">45.4704</SimpleData>
+						<SimpleData name="decimalLongitude">-123.213</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">4</SimpleData>
+						<SimpleData name="elevation">99</SimpleData>
+						<SimpleData name="locality">Hagg Lake</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/139762733</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.212875,45.47036299999998,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.02218e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma simi</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2022-10-27T09:46:55</SimpleData>
+						<SimpleData name="decimalLatitude">43.799</SimpleData>
+						<SimpleData name="decimalLongitude">-122.426</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">NA</SimpleData>
+						<SimpleData name="elevation">700</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/140167267</SimpleData>
+						<SimpleData name="occurrenceRemarks">These robust, big (slightly over an inch long) beetles have been flying into windows when we turn on lights in the morning. We&apos;ve never seen them before at our location. They look similar to the ten-lined June beetle, Polyphylla decemlineata, but markings, shape, and the time of year is wrong. Time of year seems right for Pleocoma behrensi, which is maybe expanding range north a bit?</SimpleData>
+						<SimpleData name="identificationRemarks">This is not Pleocoma behrensi , which is in the bay area , California . Cheers !</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-122.426289,43.79898300000004,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.00666e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2022-10-28T10:29:26</SimpleData>
+						<SimpleData name="decimalLatitude">45.4705</SimpleData>
+						<SimpleData name="decimalLongitude">-123.22</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">5</SimpleData>
+						<SimpleData name="elevation">96</SimpleData>
+						<SimpleData name="locality">Hagg Lake</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/140278447</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.22013,45.47047,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.96138e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2022-10-28T11:46:52</SimpleData>
+						<SimpleData name="decimalLatitude">44.5756</SimpleData>
+						<SimpleData name="decimalLongitude">-123.357</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">357</SimpleData>
+						<SimpleData name="elevation">277</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/140303953</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.357388,44.57558,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.0065e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2022-10-28T10:50:21</SimpleData>
+						<SimpleData name="decimalLatitude">45.4834</SimpleData>
+						<SimpleData name="decimalLongitude">-123.233</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">739</SimpleData>
+						<SimpleData name="elevation">92</SimpleData>
+						<SimpleData name="locality">Hagg Lake - coords in water</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/140305299</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.232919,45.48342900000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.96101e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2022-10-30T11:43:27</SimpleData>
+						<SimpleData name="decimalLatitude">45.2009</SimpleData>
+						<SimpleData name="decimalLongitude">-123.338</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">107</SimpleData>
+						<SimpleData name="elevation">257</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/140553308</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.338402,45.20088100000002,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.00994e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma simi</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2022-10-26T08:32:25</SimpleData>
+						<SimpleData name="decimalLatitude">43.7179</SimpleData>
+						<SimpleData name="decimalLongitude">-123.058</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">35</SimpleData>
+						<SimpleData name="elevation">253</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/141105421</SimpleData>
+						<SimpleData name="occurrenceRemarks">An unknown scarabidae beetle, resembles a female European rhinoceros beetle but it’s here in Oregon.</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.057924,43.717889,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.96369e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2022-11-02T14:46:50</SimpleData>
+						<SimpleData name="decimalLatitude">44.6508</SimpleData>
+						<SimpleData name="decimalLongitude">-123.332</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">200</SimpleData>
+						<SimpleData name="elevation">291</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/140924247</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.332405,44.65076999999999,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.96356e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2022-11-03T13:33:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6389</SimpleData>
+						<SimpleData name="decimalLongitude">-123.291</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">191</SimpleData>
+						<SimpleData name="elevation">280</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/141092812</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">Nice male and female !</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.291065,44.63891199999998,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.96365e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2022-11-05T14:49:54</SimpleData>
+						<SimpleData name="decimalLatitude">44.6416</SimpleData>
+						<SimpleData name="decimalLongitude">-123.28</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">4</SimpleData>
+						<SimpleData name="elevation">388</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/141205214</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.280197,44.64155800000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.00974e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma simi</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2022-11-05T11:15:34</SimpleData>
+						<SimpleData name="decimalLatitude">43.9891</SimpleData>
+						<SimpleData name="decimalLongitude">-123.075</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">20</SimpleData>
+						<SimpleData name="elevation">318</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/141546334</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.075264,43.989097,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.96656e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2022-11-09T17:08:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6367</SimpleData>
+						<SimpleData name="decimalLongitude">-123.296</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">182</SimpleData>
+						<SimpleData name="elevation">291</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/141573526</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.295939,44.63670200000002,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.96657e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2022-11-11T11:27:36</SimpleData>
+						<SimpleData name="decimalLatitude">44.6186</SimpleData>
+						<SimpleData name="decimalLongitude">-123.331</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">443</SimpleData>
+						<SimpleData name="elevation">277</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/141728372</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.331133,44.61860299999999,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.45654e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2021-10-14T10:09:52</SimpleData>
+						<SimpleData name="decimalLatitude">44.6411</SimpleData>
+						<SimpleData name="decimalLongitude">-123.298</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">269</SimpleData>
+						<SimpleData name="elevation">255</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/103967365</SimpleData>
+						<SimpleData name="occurrenceRemarks">Through other research I have identified this as a Rain Beetle (not the Hermit Flower Beetle ID’d by Seek). Pleocomidae Pleocoma.</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.297737,44.64108700000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.90201e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2021-10-27T11:15:25</SimpleData>
+						<SimpleData name="decimalLatitude">45.5998</SimpleData>
+						<SimpleData name="decimalLongitude">-123.202</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">118</SimpleData>
+						<SimpleData name="elevation">214</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/124081289</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.202035,45.59981999999999,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.38514e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2021-10-02T06:14:44</SimpleData>
+						<SimpleData name="decimalLatitude">45.4698</SimpleData>
+						<SimpleData name="decimalLongitude">-123.213</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">48</SimpleData>
+						<SimpleData name="elevation">106</SimpleData>
+						<SimpleData name="locality">Hagg Lake</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/96885626</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.212783,45.469842,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.38509e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2021-10-07T15:10:39</SimpleData>
+						<SimpleData name="decimalLatitude">44.6368</SimpleData>
+						<SimpleData name="decimalLongitude">-123.293</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">NA</SimpleData>
+						<SimpleData name="elevation">328</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/97490881</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.293415,44.63682499999997,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.39164e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2021-10-10T08:38:42</SimpleData>
+						<SimpleData name="decimalLatitude">45.4711</SimpleData>
+						<SimpleData name="decimalLongitude">-123.214</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">6</SimpleData>
+						<SimpleData name="elevation">96</SimpleData>
+						<SimpleData name="locality">Hagg Lake</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/97781354</SimpleData>
+						<SimpleData name="occurrenceRemarks">Many walking on the forest floor. Even females were out! I dug little bit of burrows males were congregating but couldn’t find female. I probably need to dig deeper to see the female in burrow.</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.214455,45.47111999999998,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.39926e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2021-10-18T15:45:23</SimpleData>
+						<SimpleData name="decimalLatitude">44.6392</SimpleData>
+						<SimpleData name="decimalLongitude">-123.339</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">9216</SimpleData>
+						<SimpleData name="elevation">390</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/98651457</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">Males digging down to female .</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.33864,44.63919599999998,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.41595e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2021-11-06T11:30:07</SimpleData>
+						<SimpleData name="decimalLatitude">44.6365</SimpleData>
+						<SimpleData name="decimalLongitude">-123.295</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">18</SimpleData>
+						<SimpleData name="elevation">301</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/100441689</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">Males digging down to female . Cheers ! Gene St. Denis</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.295013,44.63650499999999,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.4565e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2021-11-06T11:13:52</SimpleData>
+						<SimpleData name="decimalLatitude">44.6363</SimpleData>
+						<SimpleData name="decimalLongitude">-123.292</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">5</SimpleData>
+						<SimpleData name="elevation">316</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/100664426</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.292245,44.63632999999998,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.41569e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2021-11-10T09:17:03</SimpleData>
+						<SimpleData name="decimalLatitude">44.9212</SimpleData>
+						<SimpleData name="decimalLongitude">-123.051</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">22</SimpleData>
+						<SimpleData name="elevation">102</SimpleData>
+						<SimpleData name="locality">Fairmount Park, Salem</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/101131656</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.050714,44.92118600000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">2.87372e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2020-07-31T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.9083</SimpleData>
+						<SimpleData name="decimalLongitude">-123.052</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">46</SimpleData>
+						<SimpleData name="elevation">138</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/58965329</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">Appearance and Locality . Cheers ! Gene St. Denis Sierra Nevada Research</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.052175,44.908303,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.06808e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2020-10-13T08:22:26</SimpleData>
+						<SimpleData name="decimalLatitude">45.576</SimpleData>
+						<SimpleData name="decimalLongitude">-123.258</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">10</SimpleData>
+						<SimpleData name="elevation">297</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/62487310</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.258012,45.57596700000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.39917e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2020-10-24T11:23:12</SimpleData>
+						<SimpleData name="decimalLatitude">44.5486</SimpleData>
+						<SimpleData name="decimalLongitude">-123.378</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">8</SimpleData>
+						<SimpleData name="elevation">142</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/63410621</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.377741,44.54858800000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">2.98102e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2020-10-31T06:54:59</SimpleData>
+						<SimpleData name="decimalLatitude">45.4709</SimpleData>
+						<SimpleData name="decimalLongitude">-123.215</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">16</SimpleData>
+						<SimpleData name="elevation">100</SimpleData>
+						<SimpleData name="locality">Hagg Lake</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/63905041</SimpleData>
+						<SimpleData name="occurrenceRemarks">This one was dead.</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.215308,45.47094500000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.12462e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2020-10-04T09:12:25</SimpleData>
+						<SimpleData name="decimalLatitude">45.3932</SimpleData>
+						<SimpleData name="decimalLongitude">-123.04</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">35</SimpleData>
+						<SimpleData name="elevation">373</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/76239171</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.039654,45.393196,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.06763e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma simi</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2020-11-21T19:34:19</SimpleData>
+						<SimpleData name="decimalLatitude">43.6538</SimpleData>
+						<SimpleData name="decimalLongitude">-123.314</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">129</SimpleData>
+						<SimpleData name="elevation">98</SimpleData>
+						<SimpleData name="locality">Drain</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/65381303</SimpleData>
+						<SimpleData name="occurrenceRemarks">Dead, found in bathroom. 1.5” hypodermic needle for scale</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.313562,43.653825,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">2.51796e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma simi</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2019-10-13T10:00:29</SimpleData>
+						<SimpleData name="decimalLatitude">43.9867</SimpleData>
+						<SimpleData name="decimalLongitude">-123.086</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">339</SimpleData>
+						<SimpleData name="elevation">355</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/34324993</SimpleData>
+						<SimpleData name="occurrenceRemarks">Saw this on a family hike this morning. After it crossed our path, it burrowed under some duff/pine needles.</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.085639,43.98667799999998,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">2.61139e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2019-10-20T09:44:26</SimpleData>
+						<SimpleData name="decimalLatitude">44.6381</SimpleData>
+						<SimpleData name="decimalLongitude">-123.294</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">NA</SimpleData>
+						<SimpleData name="elevation">310</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/43554207</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.293881,44.638091,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">2.82642e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">FEMALE</SimpleData>
+						<SimpleData name="eventDate">2019-11-18T13:11:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6363</SimpleData>
+						<SimpleData name="decimalLongitude">-123.292</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">95</SimpleData>
+						<SimpleData name="elevation">316</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/36144239</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">Appearance and locality . Cheers ! Gene St. Denis Sierra Nevada Research</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.292177,44.63631,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.06762e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2019-12-14T09:48:26</SimpleData>
+						<SimpleData name="decimalLatitude">44.8782</SimpleData>
+						<SimpleData name="decimalLongitude">-123.138</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">110</SimpleData>
+						<SimpleData name="elevation">70</SimpleData>
+						<SimpleData name="locality">Sawmill Rd, Salem</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/36647406</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">Appearance and locality . 6 lams . Cheers ! Gene St. Denis Sierra Nevada Research</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.137644,44.878215,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.39867e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2018-10-10T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6642</SimpleData>
+						<SimpleData name="decimalLongitude">-123.24</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">352</SimpleData>
+						<SimpleData name="elevation">181</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/17941704</SimpleData>
+						<SimpleData name="occurrenceRemarks">Struggling in lake.</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.239542,44.6642,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">2.54997e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">FEMALE</SimpleData>
+						<SimpleData name="eventDate">2018-10-28T11:12:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6365</SimpleData>
+						<SimpleData name="decimalLongitude">-123.295</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">24</SimpleData>
+						<SimpleData name="elevation">301</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/18066947</SimpleData>
+						<SimpleData name="occurrenceRemarks">In first shot the reddish color in center, under the swarming males, is the flightless female at the center of pheromone party.</SimpleData>
+						<SimpleData name="identificationRemarks">Appearance and locality . Pleocoma dubitabilis has 6 to sometimes 7 lams . Cheers ! Gene St. Denis Sierra Nevada Research</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.294924,44.63651500000002,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">2.54997e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2017-10-11T12:34:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6379</SimpleData>
+						<SimpleData name="decimalLongitude">-123.293</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">34</SimpleData>
+						<SimpleData name="elevation">318</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/18067275</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">Appearance and locality . 6 lams . Cheers ! Gene St. Denis Sierra Nevada Research</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.292949,44.63789,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.06777e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2017-10-22T14:33:35</SimpleData>
+						<SimpleData name="decimalLatitude">44.6044</SimpleData>
+						<SimpleData name="decimalLongitude">-123.382</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">5</SimpleData>
+						<SimpleData name="elevation">213</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/8525672</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.382281,44.60440000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.06797e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2017-10-11T12:34:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6389</SimpleData>
+						<SimpleData name="decimalLongitude">-123.291</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">61</SimpleData>
+						<SimpleData name="elevation">267</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/8589270</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.29072,44.63887900000002,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.06795e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2016-10-06T15:17:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6373</SimpleData>
+						<SimpleData name="decimalLongitude">-123.295</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">24</SimpleData>
+						<SimpleData name="elevation">306</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/18067926</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.294537,44.63730900000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.06781e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">FEMALE</SimpleData>
+						<SimpleData name="eventDate">2015-11-05T15:47:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6394</SimpleData>
+						<SimpleData name="decimalLongitude">-123.29</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">9</SimpleData>
+						<SimpleData name="elevation">245</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/18067597</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.290203,44.63940899999998,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.8468e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2014-10-31T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">45.1721</SimpleData>
+						<SimpleData name="decimalLongitude">-122.438</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">10000</SimpleData>
+						<SimpleData name="elevation">215</SimpleData>
+						<SimpleData name="locality">Colton, car headlights</SimpleData>
+						<SimpleData name="newLocalityScale">town</SimpleData>
+						<SimpleData name="institutionCode">BISON</SimpleData>
+						<SimpleData name="references">NA</SimpleData>
+						<SimpleData name="occurrenceRemarks">https://bugguide.net/node/view/1015648</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-122.437863,45.172067,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">2.54997e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2014-10-24T10:04:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6377</SimpleData>
+						<SimpleData name="decimalLongitude">-123.294</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">31</SimpleData>
+						<SimpleData name="elevation">312</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/18067438</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">Appearance and locality . 6 lams . Cheers ! Gene St. Denis Sierra Nevada Research</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.294194,44.637676,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">2.54281e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma simi</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2010-10-25T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">43.9167</SimpleData>
+						<SimpleData name="decimalLongitude">-123.125</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">240</SimpleData>
+						<SimpleData name="locality">5 miles west of Creswell (near Eugene)</SimpleData>
+						<SimpleData name="newLocalityScale">bearing from town</SimpleData>
+						<SimpleData name="institutionCode">BISON</SimpleData>
+						<SimpleData name="references">NA</SimpleData>
+						<SimpleData name="occurrenceRemarks">https://bugguide.net/node/view/467988</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.124753,43.91667699999999,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.84716e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma simi</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2009-10-31T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">43.9894</SimpleData>
+						<SimpleData name="decimalLongitude">-123.097</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">364</SimpleData>
+						<SimpleData name="locality">burrowing in the trail at Spencer Butte</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">BISON</SimpleData>
+						<SimpleData name="references">NA</SimpleData>
+						<SimpleData name="occurrenceRemarks">https://bugguide.net/node/view/348837</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.0972786558896,43.98938572682829,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.11783e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">FEMALE</SimpleData>
+						<SimpleData name="eventDate">2006-01-09T13:04:00</SimpleData>
+						<SimpleData name="decimalLatitude">45.0515</SimpleData>
+						<SimpleData name="decimalLongitude">-123.142</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">173</SimpleData>
+						<SimpleData name="elevation">227</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/72921399</SimpleData>
+						<SimpleData name="occurrenceRemarks">Female</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.142081,45.051465,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.11781e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2006-01-09T13:03:00</SimpleData>
+						<SimpleData name="decimalLatitude">45.0515</SimpleData>
+						<SimpleData name="decimalLongitude">-123.142</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">173</SimpleData>
+						<SimpleData name="elevation">227</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/72921550</SimpleData>
+						<SimpleData name="occurrenceRemarks">males, emergence holes, and habitat example</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.142081,45.051465,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.1183e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">2006-01-09T13:14:00</SimpleData>
+						<SimpleData name="decimalLatitude">45.0515</SimpleData>
+						<SimpleData name="decimalLongitude">-123.142</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">173</SimpleData>
+						<SimpleData name="elevation">227</SimpleData>
+						<SimpleData name="locality">NA</SimpleData>
+						<SimpleData name="newLocalityScale">NA</SimpleData>
+						<SimpleData name="institutionCode">iNaturalist</SimpleData>
+						<SimpleData name="references">https://www.inaturalist.org/observations/72921702</SimpleData>
+						<SimpleData name="occurrenceRemarks">there were a couple here</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.142081,45.051465,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.80373e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2005-10-05T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">45.0645</SimpleData>
+						<SimpleData name="decimalLongitude">-123.136</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">200</SimpleData>
+						<SimpleData name="elevation">305</SimpleData>
+						<SimpleData name="locality">Bethel Heights, Noble Mtn. Tree Farm after pre-dawn flight</SimpleData>
+						<SimpleData name="newLocalityScale">coords</SimpleData>
+						<SimpleData name="institutionCode">DMNS</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=3361363</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.135683,45.064533,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.80373e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2005-10-05T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">45.0645</SimpleData>
+						<SimpleData name="decimalLongitude">-123.136</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">200</SimpleData>
+						<SimpleData name="elevation">305</SimpleData>
+						<SimpleData name="locality">Bethel Heights, Noble Mtn. Tree Farm after pre-dawn flight</SimpleData>
+						<SimpleData name="newLocalityScale">coords</SimpleData>
+						<SimpleData name="institutionCode">DMNS</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=3361364</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.135683,45.064533,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.80373e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2005-10-05T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">45.0645</SimpleData>
+						<SimpleData name="decimalLongitude">-123.136</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">200</SimpleData>
+						<SimpleData name="elevation">305</SimpleData>
+						<SimpleData name="locality">Bethel Heights, Noble Mtn. Tree Farm after pre-dawn flight</SimpleData>
+						<SimpleData name="newLocalityScale">coords</SimpleData>
+						<SimpleData name="institutionCode">DMNS</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=3361366</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.135683,45.064533,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.80373e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2005-10-05T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">45.0645</SimpleData>
+						<SimpleData name="decimalLongitude">-123.136</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">200</SimpleData>
+						<SimpleData name="elevation">305</SimpleData>
+						<SimpleData name="locality">Bethel Heights, Noble Mtn. Tree Farm after pre-dawn flight</SimpleData>
+						<SimpleData name="newLocalityScale">coords</SimpleData>
+						<SimpleData name="institutionCode">DMNS</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=3361369</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.135683,45.064533,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.80373e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2005-10-05T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">45.0645</SimpleData>
+						<SimpleData name="decimalLongitude">-123.136</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">200</SimpleData>
+						<SimpleData name="elevation">305</SimpleData>
+						<SimpleData name="locality">Bethel Heights, Noble Mtn. Tree Farm after pre-dawn flight</SimpleData>
+						<SimpleData name="newLocalityScale">coords</SimpleData>
+						<SimpleData name="institutionCode">DMNS</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=3361371</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.135683,45.064533,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.07054e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2001-10-27T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.645</SimpleData>
+						<SimpleData name="decimalLongitude">-123.308</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">152</SimpleData>
+						<SimpleData name="locality">Corvallis (6 mi. NNW)</SimpleData>
+						<SimpleData name="newLocalityScale">bearing from town</SimpleData>
+						<SimpleData name="institutionCode">CMN</SimpleData>
+						<SimpleData name="references">NA</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.308265,44.645032,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.07794e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2001-10-27T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.645</SimpleData>
+						<SimpleData name="decimalLongitude">-123.308</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">152</SimpleData>
+						<SimpleData name="locality">Corvallis (6 mi. NNW)</SimpleData>
+						<SimpleData name="newLocalityScale">bearing from town</SimpleData>
+						<SimpleData name="institutionCode">CMN</SimpleData>
+						<SimpleData name="references">NA</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.308265,44.645032,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.07054e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2001-10-27T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.645</SimpleData>
+						<SimpleData name="decimalLongitude">-123.308</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">152</SimpleData>
+						<SimpleData name="locality">Corvallis (6 mi. NNW)</SimpleData>
+						<SimpleData name="newLocalityScale">bearing from town</SimpleData>
+						<SimpleData name="institutionCode">CMN</SimpleData>
+						<SimpleData name="references">NA</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.308265,44.645032,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.07054e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2001-10-27T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.645</SimpleData>
+						<SimpleData name="decimalLongitude">-123.308</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">152</SimpleData>
+						<SimpleData name="locality">Corvallis (6 mi. NNW)</SimpleData>
+						<SimpleData name="newLocalityScale">bearing from town</SimpleData>
+						<SimpleData name="institutionCode">CMN</SimpleData>
+						<SimpleData name="references">NA</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.308265,44.645032,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.07794e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2001-10-27T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.645</SimpleData>
+						<SimpleData name="decimalLongitude">-123.308</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">152</SimpleData>
+						<SimpleData name="locality">Corvallis (6 mi. NNW)</SimpleData>
+						<SimpleData name="newLocalityScale">bearing from town</SimpleData>
+						<SimpleData name="institutionCode">CMN</SimpleData>
+						<SimpleData name="references">NA</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.308265,44.645032,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.07054e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2001-10-27T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.645</SimpleData>
+						<SimpleData name="decimalLongitude">-123.308</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">152</SimpleData>
+						<SimpleData name="locality">Corvallis (6 mi. NNW)</SimpleData>
+						<SimpleData name="newLocalityScale">bearing from town</SimpleData>
+						<SimpleData name="institutionCode">CMN</SimpleData>
+						<SimpleData name="references">NA</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.308265,44.645032,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.07794e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2001-10-27T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.645</SimpleData>
+						<SimpleData name="decimalLongitude">-123.308</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">152</SimpleData>
+						<SimpleData name="locality">Corvallis (6 mi. NNW)</SimpleData>
+						<SimpleData name="newLocalityScale">bearing from town</SimpleData>
+						<SimpleData name="institutionCode">CMN</SimpleData>
+						<SimpleData name="references">NA</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.308265,44.645032,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.07794e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2001-10-27T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.645</SimpleData>
+						<SimpleData name="decimalLongitude">-123.308</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">152</SimpleData>
+						<SimpleData name="locality">Corvallis (6 mi. NNW)</SimpleData>
+						<SimpleData name="newLocalityScale">bearing from town</SimpleData>
+						<SimpleData name="institutionCode">CMN</SimpleData>
+						<SimpleData name="references">NA</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.308265,44.645032,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.07054e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2001-10-27T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.645</SimpleData>
+						<SimpleData name="decimalLongitude">-123.308</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">152</SimpleData>
+						<SimpleData name="locality">Corvallis (6 mi. NNW)</SimpleData>
+						<SimpleData name="newLocalityScale">bearing from town</SimpleData>
+						<SimpleData name="institutionCode">CMN</SimpleData>
+						<SimpleData name="references">NA</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.308265,44.645032,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.07054e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2001-10-27T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.645</SimpleData>
+						<SimpleData name="decimalLongitude">-123.308</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">152</SimpleData>
+						<SimpleData name="locality">Corvallis (6 mi. NNW)</SimpleData>
+						<SimpleData name="newLocalityScale">bearing from town</SimpleData>
+						<SimpleData name="institutionCode">CMN</SimpleData>
+						<SimpleData name="references">NA</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.308265,44.645032,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.07794e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2001-10-27T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.645</SimpleData>
+						<SimpleData name="decimalLongitude">-123.308</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">152</SimpleData>
+						<SimpleData name="locality">Corvallis (6 mi. NNW)</SimpleData>
+						<SimpleData name="newLocalityScale">bearing from town</SimpleData>
+						<SimpleData name="institutionCode">CMN</SimpleData>
+						<SimpleData name="references">NA</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.308265,44.645032,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.07794e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">MALE</SimpleData>
+						<SimpleData name="eventDate">2001-10-27T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.645</SimpleData>
+						<SimpleData name="decimalLongitude">-123.308</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">152</SimpleData>
+						<SimpleData name="locality">Corvallis (6 mi. NNW)</SimpleData>
+						<SimpleData name="newLocalityScale">bearing from town</SimpleData>
+						<SimpleData name="institutionCode">CMN</SimpleData>
+						<SimpleData name="references">NA</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.308265,44.645032,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.80071e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1992-10-31T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6418</SimpleData>
+						<SimpleData name="decimalLongitude">-123.298</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">247</SimpleData>
+						<SimpleData name="locality">McDonald Forest, Sulfur Springs Rd, Benton Co., OR</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">University of Central Florida Collection of Arthopods (UCFC)</SimpleData>
+						<SimpleData name="references">NA</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.2984,44.64179999999998,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.80071e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1992-10-31T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6418</SimpleData>
+						<SimpleData name="decimalLongitude">-123.298</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">247</SimpleData>
+						<SimpleData name="locality">McDonald Forest, Sulfur Springs Rd, Benton Co., OR</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">University of Central Florida Collection of Arthopods (UCFC)</SimpleData>
+						<SimpleData name="references">NA</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.2984,44.64179999999998,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">2.55635e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1985-10-26T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.8568</SimpleData>
+						<SimpleData name="decimalLongitude">-123.078</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">200</SimpleData>
+						<SimpleData name="elevation">212</SimpleData>
+						<SimpleData name="locality">Joryville Co. Park</SimpleData>
+						<SimpleData name="newLocalityScale">coords</SimpleData>
+						<SimpleData name="institutionCode">TTU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=1291616</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.07843,44.85678699999998,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">2.55635e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1985-10-27T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.9187</SimpleData>
+						<SimpleData name="decimalLongitude">-122.664</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">200</SimpleData>
+						<SimpleData name="elevation">450</SimpleData>
+						<SimpleData name="locality">8.3 air miles. SE. of Silverton</SimpleData>
+						<SimpleData name="newLocalityScale">coords</SimpleData>
+						<SimpleData name="institutionCode">TTU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=1291617</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-122.663796,44.918732,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">2.55634e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1985-10-26T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.8568</SimpleData>
+						<SimpleData name="decimalLongitude">-123.078</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">200</SimpleData>
+						<SimpleData name="elevation">212</SimpleData>
+						<SimpleData name="locality">Joryville Co. Park</SimpleData>
+						<SimpleData name="newLocalityScale">coords</SimpleData>
+						<SimpleData name="institutionCode">TTU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=1291619</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.07843,44.85678699999998,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">2.55635e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1969-10-08T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">45.1721</SimpleData>
+						<SimpleData name="decimalLongitude">-122.438</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">10000</SimpleData>
+						<SimpleData name="elevation">215</SimpleData>
+						<SimpleData name="locality">Colton</SimpleData>
+						<SimpleData name="newLocalityScale">town</SimpleData>
+						<SimpleData name="institutionCode">TTU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=1291618</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-122.437863,45.172067,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">2.55635e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1969-10-08T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">45.1721</SimpleData>
+						<SimpleData name="decimalLongitude">-122.438</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">10000</SimpleData>
+						<SimpleData name="elevation">215</SimpleData>
+						<SimpleData name="locality">Colton</SimpleData>
+						<SimpleData name="newLocalityScale">town</SimpleData>
+						<SimpleData name="institutionCode">TTU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=1291620</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-122.437863,45.172067,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1969-10-16T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">43.9836</SimpleData>
+						<SimpleData name="decimalLongitude">-123.097</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">571</SimpleData>
+						<SimpleData name="locality">Spencer Butte, S of Eugene</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383904</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.09667,43.98361000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1969-10-16T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">43.9836</SimpleData>
+						<SimpleData name="decimalLongitude">-123.097</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">571</SimpleData>
+						<SimpleData name="locality">Spencer Butte, S of Eugene</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383905</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.09667,43.98361000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1969-10-16T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">43.9836</SimpleData>
+						<SimpleData name="decimalLongitude">-123.097</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">571</SimpleData>
+						<SimpleData name="locality">Spencer Butte, S of Eugene</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383906</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.09667,43.98361000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1969-10-16T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">43.9836</SimpleData>
+						<SimpleData name="decimalLongitude">-123.097</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">571</SimpleData>
+						<SimpleData name="locality">Spencer Butte</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383907</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.09667,43.98361000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1969-10-16T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">43.9836</SimpleData>
+						<SimpleData name="decimalLongitude">-123.097</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">571</SimpleData>
+						<SimpleData name="locality">Spencer Butte, S of Eugene</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383908</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.09667,43.98361000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1969-10-16T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">43.9836</SimpleData>
+						<SimpleData name="decimalLongitude">-123.097</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">571</SimpleData>
+						<SimpleData name="locality">Spencer Butte</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383909</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.09667,43.98361000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1969-10-16T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">43.9836</SimpleData>
+						<SimpleData name="decimalLongitude">-123.097</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">571</SimpleData>
+						<SimpleData name="locality">Spencer Butte, S of Eugene</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383910</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.09667,43.98361000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1969-10-16T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">43.9836</SimpleData>
+						<SimpleData name="decimalLongitude">-123.097</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">571</SimpleData>
+						<SimpleData name="locality">Spencer Butte</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383911</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.09667,43.98361000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1969-10-16T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">43.9836</SimpleData>
+						<SimpleData name="decimalLongitude">-123.097</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">571</SimpleData>
+						<SimpleData name="locality">Spencer Butte, S of Eugene</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383912</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.09667,43.98361000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1969-10-16T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">43.9836</SimpleData>
+						<SimpleData name="decimalLongitude">-123.097</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">571</SimpleData>
+						<SimpleData name="locality">Spencer Butte, S of Eugene</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383914</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.09667,43.98361000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1969-10-16T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">43.9836</SimpleData>
+						<SimpleData name="decimalLongitude">-123.097</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">571</SimpleData>
+						<SimpleData name="locality">Spencer Butte, S of Eugene</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383915</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.09667,43.98361000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1969-10-16T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">43.9836</SimpleData>
+						<SimpleData name="decimalLongitude">-123.097</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">571</SimpleData>
+						<SimpleData name="locality">Spencer Butte, S of Eugene</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383916</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.09667,43.98361000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1969-10-16T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">43.9836</SimpleData>
+						<SimpleData name="decimalLongitude">-123.097</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">571</SimpleData>
+						<SimpleData name="locality">Spencer Butte, S of Eugene</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383917</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.09667,43.98361000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1969-10-16T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">43.9836</SimpleData>
+						<SimpleData name="decimalLongitude">-123.097</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">571</SimpleData>
+						<SimpleData name="locality">Spencer Butte, S of Eugene</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383918</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.09667,43.98361000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1969-10-16T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">43.9836</SimpleData>
+						<SimpleData name="decimalLongitude">-123.097</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">571</SimpleData>
+						<SimpleData name="locality">Spencer Butte, S of Eugene</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383919</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.09667,43.98361000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1969-10-16T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">43.9836</SimpleData>
+						<SimpleData name="decimalLongitude">-123.097</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">571</SimpleData>
+						<SimpleData name="locality">Spencer Butte, S of Eugene</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383920</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.09667,43.98361000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1969-10-16T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">43.9836</SimpleData>
+						<SimpleData name="decimalLongitude">-123.097</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">571</SimpleData>
+						<SimpleData name="locality">Spencer Butte, S of Eugene</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383921</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.09667,43.98361000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1969-10-16T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">43.9836</SimpleData>
+						<SimpleData name="decimalLongitude">-123.097</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">571</SimpleData>
+						<SimpleData name="locality">Spencer Butte, S of Eugene</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383922</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.09667,43.98361000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1969-10-16T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">43.9836</SimpleData>
+						<SimpleData name="decimalLongitude">-123.097</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">571</SimpleData>
+						<SimpleData name="locality">Spencer Butte, S of Eugene</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383923</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.09667,43.98361000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1969-10-16T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">43.9836</SimpleData>
+						<SimpleData name="decimalLongitude">-123.097</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">571</SimpleData>
+						<SimpleData name="locality">Spencer Butte, S of Eugene</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383925</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.09667,43.98361000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1969-10-16T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">43.9836</SimpleData>
+						<SimpleData name="decimalLongitude">-123.097</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">571</SimpleData>
+						<SimpleData name="locality">Spencer Butte, S of Eugene</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383926</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.09667,43.98361000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1967-10-27T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6377</SimpleData>
+						<SimpleData name="decimalLongitude">-123.281</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">309</SimpleData>
+						<SimpleData name="locality">McDonald Forest, 5 mi. N of Corvallis</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383882</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.280846,44.637722,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1967-10-27T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6377</SimpleData>
+						<SimpleData name="decimalLongitude">-123.281</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">309</SimpleData>
+						<SimpleData name="locality">McDonald Forest, 5 mi. N of Corvallis</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383883</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.280846,44.637722,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.75634e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1966-10-21T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6051</SimpleData>
+						<SimpleData name="decimalLongitude">-123.322</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">200</SimpleData>
+						<SimpleData name="elevation">246</SimpleData>
+						<SimpleData name="locality">MacDonald Forest</SimpleData>
+						<SimpleData name="newLocalityScale">coords</SimpleData>
+						<SimpleData name="institutionCode">NCSU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=60684591</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.3222,44.60510000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.75632e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1966-10-21T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6051</SimpleData>
+						<SimpleData name="decimalLongitude">-123.322</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">200</SimpleData>
+						<SimpleData name="elevation">246</SimpleData>
+						<SimpleData name="locality">MacDonald Forest</SimpleData>
+						<SimpleData name="newLocalityScale">coords</SimpleData>
+						<SimpleData name="institutionCode">NCSU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=60685883</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.3222,44.60510000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.75633e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1966-10-21T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6051</SimpleData>
+						<SimpleData name="decimalLongitude">-123.322</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">200</SimpleData>
+						<SimpleData name="elevation">246</SimpleData>
+						<SimpleData name="locality">MacDonald Forest</SimpleData>
+						<SimpleData name="newLocalityScale">coords</SimpleData>
+						<SimpleData name="institutionCode">NCSU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=60688279</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.3222,44.60510000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.7563e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1966-10-21T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6051</SimpleData>
+						<SimpleData name="decimalLongitude">-123.322</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">200</SimpleData>
+						<SimpleData name="elevation">246</SimpleData>
+						<SimpleData name="locality">MacDonald Forest</SimpleData>
+						<SimpleData name="newLocalityScale">coords</SimpleData>
+						<SimpleData name="institutionCode">NCSU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=60689677</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.3222,44.60510000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.75634e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1966-10-21T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6051</SimpleData>
+						<SimpleData name="decimalLongitude">-123.322</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">200</SimpleData>
+						<SimpleData name="elevation">246</SimpleData>
+						<SimpleData name="locality">MacDonald Forest</SimpleData>
+						<SimpleData name="newLocalityScale">coords</SimpleData>
+						<SimpleData name="institutionCode">NCSU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=60692166</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.3222,44.60510000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.75631e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1966-10-21T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6051</SimpleData>
+						<SimpleData name="decimalLongitude">-123.322</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">200</SimpleData>
+						<SimpleData name="elevation">246</SimpleData>
+						<SimpleData name="locality">MacDonald Forest</SimpleData>
+						<SimpleData name="newLocalityScale">coords</SimpleData>
+						<SimpleData name="institutionCode">NCSU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=60693235</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.3222,44.60510000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.75632e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1966-10-21T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6051</SimpleData>
+						<SimpleData name="decimalLongitude">-123.322</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">200</SimpleData>
+						<SimpleData name="elevation">246</SimpleData>
+						<SimpleData name="locality">MacDonald Forest</SimpleData>
+						<SimpleData name="newLocalityScale">coords</SimpleData>
+						<SimpleData name="institutionCode">NCSU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=60695415</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.3222,44.60510000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.75632e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1966-10-21T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6051</SimpleData>
+						<SimpleData name="decimalLongitude">-123.322</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">200</SimpleData>
+						<SimpleData name="elevation">246</SimpleData>
+						<SimpleData name="locality">MacDonald Forest</SimpleData>
+						<SimpleData name="newLocalityScale">coords</SimpleData>
+						<SimpleData name="institutionCode">NCSU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=60705972</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.3222,44.60510000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.75632e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">NA</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1966-10-21T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6051</SimpleData>
+						<SimpleData name="decimalLongitude">-123.322</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">200</SimpleData>
+						<SimpleData name="elevation">246</SimpleData>
+						<SimpleData name="locality">MacDonald Forest</SimpleData>
+						<SimpleData name="newLocalityScale">coords</SimpleData>
+						<SimpleData name="institutionCode">NCSU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=60707919</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.3222,44.60510000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.80216e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1963-10-23T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6377</SimpleData>
+						<SimpleData name="decimalLongitude">-123.281</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">309</SimpleData>
+						<SimpleData name="locality">McDonald For. 5mi.N. Corvallis,</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">INHS</SimpleData>
+						<SimpleData name="references">NA</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.280846,44.637722,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.80216e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1963-10-23T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6377</SimpleData>
+						<SimpleData name="decimalLongitude">-123.281</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">309</SimpleData>
+						<SimpleData name="locality">McDonald For. 5mi.N. Corvallis,</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">INHS</SimpleData>
+						<SimpleData name="references">NA</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.280846,44.637722,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.80216e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1963-10-23T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6377</SimpleData>
+						<SimpleData name="decimalLongitude">-123.281</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">309</SimpleData>
+						<SimpleData name="locality">McDonald For. 5mi.N. Corvallis,</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">INHS</SimpleData>
+						<SimpleData name="references">NA</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.280846,44.637722,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">3.80216e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1963-10-23T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6377</SimpleData>
+						<SimpleData name="decimalLongitude">-123.281</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">309</SimpleData>
+						<SimpleData name="locality">McDonald For. 5mi.N. Corvallis,</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">INHS</SimpleData>
+						<SimpleData name="references">NA</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.280846,44.637722,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.99381e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1954-11-05T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6377</SimpleData>
+						<SimpleData name="decimalLongitude">-123.281</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">309</SimpleData>
+						<SimpleData name="locality">McDonald Forest, Corvallis</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">UPRM</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=36802738</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.280846,44.637722,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.99381e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1954-11-05T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6377</SimpleData>
+						<SimpleData name="decimalLongitude">-123.281</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">309</SimpleData>
+						<SimpleData name="locality">McDonald Forest, Corvallis</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">UPRM</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=36802739</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.280846,44.637722,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1949-12-05T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6377</SimpleData>
+						<SimpleData name="decimalLongitude">-123.281</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">309</SimpleData>
+						<SimpleData name="locality">McDonald Forest, 5 mi. N of Corvallis</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383879</SimpleData>
+						<SimpleData name="occurrenceRemarks">no collection date record</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.280846,44.637722,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.45568e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">dubitabilis</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">1949-12-05T00:00:00</SimpleData>
+						<SimpleData name="decimalLatitude">44.6377</SimpleData>
+						<SimpleData name="decimalLongitude">-123.281</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">309</SimpleData>
+						<SimpleData name="locality">McDonald Forest, 5 mi. N of Corvallis</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">ASU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=383881</SimpleData>
+						<SimpleData name="occurrenceRemarks">no collection date record</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.280846,44.637722,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.42513e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">NA</SimpleData>
+						<SimpleData name="decimalLatitude">44.908</SimpleData>
+						<SimpleData name="decimalLongitude">-122.886</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">10000</SimpleData>
+						<SimpleData name="elevation">133</SimpleData>
+						<SimpleData name="locality">near Macleay, Section 36 T7S, R2W</SimpleData>
+						<SimpleData name="newLocalityScale">town</SimpleData>
+						<SimpleData name="institutionCode">TAMU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=49271987</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">dubitablis</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-122.8861147543719,44.90799284703086,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.42513e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma simi</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">NA</SimpleData>
+						<SimpleData name="decimalLatitude">43.9894</SimpleData>
+						<SimpleData name="decimalLongitude">-123.097</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">364</SimpleData>
+						<SimpleData name="locality">Eugene, Spencer Butte Park</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">TAMU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=49271990</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.0972786558896,43.98938572682829,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.42488e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma simi</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">NA</SimpleData>
+						<SimpleData name="decimalLatitude">43.9894</SimpleData>
+						<SimpleData name="decimalLongitude">-123.097</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">364</SimpleData>
+						<SimpleData name="locality">Eugene, Spencer Butte Park</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">TAMU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=49271991</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.0972786558896,43.98938572682829,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.4254e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">NA</SimpleData>
+						<SimpleData name="decimalLatitude">45.3592</SimpleData>
+						<SimpleData name="decimalLongitude">-123.035</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">261</SimpleData>
+						<SimpleData name="locality">5 miles NE Newberg</SimpleData>
+						<SimpleData name="newLocalityScale">bearing from town</SimpleData>
+						<SimpleData name="institutionCode">TAMU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=49271992</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">dubitablis</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.035241,45.35918299999999,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.42513e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">NA</SimpleData>
+						<SimpleData name="decimalLatitude">45.1721</SimpleData>
+						<SimpleData name="decimalLongitude">-122.438</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">10000</SimpleData>
+						<SimpleData name="elevation">215</SimpleData>
+						<SimpleData name="locality">Colton</SimpleData>
+						<SimpleData name="newLocalityScale">town</SimpleData>
+						<SimpleData name="institutionCode">TAMU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=49271998</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">leachi</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-122.437863,45.172067,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.42488e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">NA</SimpleData>
+						<SimpleData name="decimalLatitude">45.3592</SimpleData>
+						<SimpleData name="decimalLongitude">-123.035</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">261</SimpleData>
+						<SimpleData name="locality">5 miles NE Newberg</SimpleData>
+						<SimpleData name="newLocalityScale">bearing from town</SimpleData>
+						<SimpleData name="institutionCode">TAMU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=49272002</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">dubitablis</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.035241,45.35918299999999,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.4254e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">NA</SimpleData>
+						<SimpleData name="decimalLatitude">44.657</SimpleData>
+						<SimpleData name="decimalLongitude">-123.235</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">122</SimpleData>
+						<SimpleData name="locality">N. of Corvallis, Peavy Arboretum</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">TAMU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=49272003</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">dubitablis</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.2353075237795,44.6569880663321,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.42538e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">NA</SimpleData>
+						<SimpleData name="decimalLatitude">45.5204</SimpleData>
+						<SimpleData name="decimalLongitude">-123.164</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">200</SimpleData>
+						<SimpleData name="elevation">91</SimpleData>
+						<SimpleData name="locality">2.5 miles W Forest Grove</SimpleData>
+						<SimpleData name="newLocalityScale">bearing from town</SimpleData>
+						<SimpleData name="institutionCode">TAMU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=49272004</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">dubitablis</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.1639597648034,45.52035739508358,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.42513e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">NA</SimpleData>
+						<SimpleData name="decimalLatitude">44.908</SimpleData>
+						<SimpleData name="decimalLongitude">-122.886</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">10000</SimpleData>
+						<SimpleData name="elevation">133</SimpleData>
+						<SimpleData name="locality">Macleay</SimpleData>
+						<SimpleData name="newLocalityScale">town</SimpleData>
+						<SimpleData name="institutionCode">TAMU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=49272009</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">dubitablis</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-122.8861147543719,44.90799284703086,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.42488e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">NA</SimpleData>
+						<SimpleData name="decimalLatitude">44.908</SimpleData>
+						<SimpleData name="decimalLongitude">-122.886</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">10000</SimpleData>
+						<SimpleData name="elevation">133</SimpleData>
+						<SimpleData name="locality">Macleay</SimpleData>
+						<SimpleData name="newLocalityScale">town</SimpleData>
+						<SimpleData name="institutionCode">TAMU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=49272010</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">dubitablis</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-122.8861147543719,44.90799284703086,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.42562e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">NA</SimpleData>
+						<SimpleData name="decimalLatitude">44.908</SimpleData>
+						<SimpleData name="decimalLongitude">-122.886</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">10000</SimpleData>
+						<SimpleData name="elevation">133</SimpleData>
+						<SimpleData name="locality">Macleay</SimpleData>
+						<SimpleData name="newLocalityScale">town</SimpleData>
+						<SimpleData name="institutionCode">TAMU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=49272011</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">dubitablis</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-122.8861147543719,44.90799284703086,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.42513e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">NA</SimpleData>
+						<SimpleData name="decimalLatitude">44.908</SimpleData>
+						<SimpleData name="decimalLongitude">-122.886</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">10000</SimpleData>
+						<SimpleData name="elevation">133</SimpleData>
+						<SimpleData name="locality">Macleay</SimpleData>
+						<SimpleData name="newLocalityScale">town</SimpleData>
+						<SimpleData name="institutionCode">TAMU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=49272012</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">dubitablis</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-122.8861147543719,44.90799284703086,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.42488e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">NA</SimpleData>
+						<SimpleData name="decimalLatitude">44.6332</SimpleData>
+						<SimpleData name="decimalLongitude">-123.294</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">250</SimpleData>
+						<SimpleData name="locality">5 miles N Corvallis, MacDonald Forest</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">TAMU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=49272013</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">dubitablis</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.2940189603717,44.63319901725755,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.4254e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">NA</SimpleData>
+						<SimpleData name="decimalLatitude">44.6332</SimpleData>
+						<SimpleData name="decimalLongitude">-123.294</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">250</SimpleData>
+						<SimpleData name="locality">5 miles N Corvallis, MacDonald Forest</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">TAMU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=49272014</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">dubitablis</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.2940189603717,44.63319901725755,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.42488e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">NA</SimpleData>
+						<SimpleData name="decimalLatitude">44.6332</SimpleData>
+						<SimpleData name="decimalLongitude">-123.294</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">250</SimpleData>
+						<SimpleData name="locality">5 miles N Corvallis, MacDonald Forest</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">TAMU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=49272018</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">dubitablis</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.2940189603717,44.63319901725755,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.42562e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">NA</SimpleData>
+						<SimpleData name="decimalLatitude">44.6332</SimpleData>
+						<SimpleData name="decimalLongitude">-123.294</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">250</SimpleData>
+						<SimpleData name="locality">5 miles N Corvallis, MacDonald Forest</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">TAMU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=49272019</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">dubitablis</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.2940189603717,44.63319901725755,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.42538e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">NA</SimpleData>
+						<SimpleData name="decimalLatitude">45.3713</SimpleData>
+						<SimpleData name="decimalLongitude">-123.047</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">219</SimpleData>
+						<SimpleData name="locality">6 miles NE Newberg</SimpleData>
+						<SimpleData name="newLocalityScale">bearing from town</SimpleData>
+						<SimpleData name="institutionCode">TAMU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=49272020</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">dubitablis</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.046706,45.371317,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.42488e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">NA</SimpleData>
+						<SimpleData name="decimalLatitude">45.3713</SimpleData>
+						<SimpleData name="decimalLongitude">-123.047</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">219</SimpleData>
+						<SimpleData name="locality">6 miles NE Newberg</SimpleData>
+						<SimpleData name="newLocalityScale">bearing from town</SimpleData>
+						<SimpleData name="institutionCode">TAMU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=49272021</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">dubitablis</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.046706,45.371317,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">4.42562e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">NA</SimpleData>
+						<SimpleData name="decimalLatitude">45.3713</SimpleData>
+						<SimpleData name="decimalLongitude">-123.047</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">219</SimpleData>
+						<SimpleData name="locality">6 miles NE Newberg</SimpleData>
+						<SimpleData name="newLocalityScale">bearing from town</SimpleData>
+						<SimpleData name="institutionCode">TAMU</SimpleData>
+						<SimpleData name="references">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=49272022</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">dubitablis</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.046706,45.371317,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#pointStyleMap</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_rainbeetles_GBIF20231110_DSSSSSDDSISSSSSS">
+						<SimpleData name="gbifID">1.29202e+09</SimpleData>
+						<SimpleData name="family">Pleocomidae</SimpleData>
+						<SimpleData name="species">Pleocoma dubitabilis</SimpleData>
+						<SimpleData name="infraspecificEpithet">NA</SimpleData>
+						<SimpleData name="sex">NA</SimpleData>
+						<SimpleData name="eventDate">NA</SimpleData>
+						<SimpleData name="decimalLatitude">44.6377</SimpleData>
+						<SimpleData name="decimalLongitude">-123.281</SimpleData>
+						<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+						<SimpleData name="elevation">309</SimpleData>
+						<SimpleData name="locality">McDonald, Forest</SimpleData>
+						<SimpleData name="newLocalityScale">property</SimpleData>
+						<SimpleData name="institutionCode">NAU</SimpleData>
+						<SimpleData name="references">https://ecdysis.org/collections/individual/index.php?occid=762729</SimpleData>
+						<SimpleData name="occurrenceRemarks">NA</SimpleData>
+						<SimpleData name="identificationRemarks">NA</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.280846,44.637722,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+	</Document>
+	<GroundOverlay>
+		<name>flood_122m</name>
+		<color>82ffffff</color>
+		<Icon>
+			<href>/home/john/Downloads/240px-000080_Navy_Blue_Square.svg.png</href>
+			<viewBoundScale>0.75</viewBoundScale>
+		</Icon>
+		<altitude>122</altitude>
+		<altitudeMode>absolute</altitudeMode>
+		<LatLonBox>
+			<north>45.83457657458464</north>
+			<south>43.86341750119913</south>
+			<east>-122.2855740257895</east>
+			<west>-123.5899051710629</west>
+		</LatLonBox>
+	</GroundOverlay>
+</Folder>
+</kml>

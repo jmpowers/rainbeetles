@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="John Powers" />
+
+<meta name="date" content="2023-11-14" />
+
+<title>Rain Beetles v. Missoula Floods</title>
+
+<script src="libs/header-attrs-2.20/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+<script src="libs/navigation-1.1/codefolding.js"></script>
+<link href="libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div id="header">
+
+<div class="btn-group pull-right float-right">
+<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu dropdown-menu-right" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
+
+
+
+<h1 class="title toc-ignore">Rain Beetles v. Missoula Floods</h1>
+<h4 class="author"><a href="http://sites.uci.edu/powers/">John
+Powers</a></h4>
+<h4 class="date">2023-11-14</h4>
+
+</div>
+
+
+<div id="purpose" class="section level1">
+<h1>Purpose</h1>
+<p>Map <em>Pleocoma</em> distributions and evaluate whether the
+Pleistocene Missoula floods impacted their distribution in the
+Willamette Valley.</p>
+<pre class="r"><code>library(tidyverse)
+knitr::opts_chunk$set(comment=&quot;&quot;, cache=T, warning = F, message = F, fig.path = &quot;images/&quot;)
+
+library(sf)
+mycrs &lt;- &quot;+proj=longlat +datum=WGS84&quot;
+
+beetle_taxa &lt;- c(&quot;Coleoptera&quot;, &quot;Pleocomidae&quot;, &quot;Scarabaeidae&quot;, &quot;Lucanidae&quot;) 
+library(RColorBrewer)
+beetle_pal &lt;- set_names(brewer.pal(4, &quot;Set1&quot;), beetle_taxa)</code></pre>
+</div>
+<div id="missoula-floods-highpoint" class="section level1">
+<h1>Missoula Floods highpoint</h1>
+<p>Multiple sources place the highest extent of the ~40 Missoula Floods
+in the Willamette Valley at an elevation of 122 m, although this was
+locally higher in the Portland Basin as the 150 m Rocky Butte saddle was
+overtopped (references in <a
+href="https://doi.org/10.3133/ofr2003408">Minervini et
+al. 2003</a>).</p>
+<p>This flood extent has been mapped against LIDAR data in the Portland
+Basin (<a href="https://pubs.oregon.gov/dogami/ims/p-ims-036.htm">Burns
+and Coe 2012</a>).</p>
+<pre class="r"><code>maxflood &lt;-  122 #in meters
+res &lt;- 6 #resolution of elevation histograms = maxflood / res
+
+flood &lt;- data.frame(x = c(-124, -122), y = c(43.5, 46)) #box around the Willamette Valley
+flood.sf &lt;- flood %&gt;% st_as_sf(coords = c(&quot;x&quot;, &quot;y&quot;), crs = mycrs) %&gt;% st_bbox() %&gt;% st_as_sfc()</code></pre>
+</div>
+<div id="beetle-records-from-gbif" class="section level1">
+<h1>Beetle records from GBIF</h1>
+<p>Search GBIF for:</p>
+<ol style="list-style-type: decimal">
+<li>rain beetles across their range: <a
+href="https://doi.org/10.15468/dl.kd2swv">GBIF download
+2023-11-10</a></li>
+<li>all beetles, and two other scarab families around the Willamette
+Valley for sampling effort comparison</li>
+</ol>
+<pre class="r"><code>library(rgbif)
+
+#GBIF download in simple format, used for annotation: data/0055359-231002084531237.csv
+Pleocomidae.gbif &lt;- occ_search(taxonKey = name_backbone(&quot;Pleocomidae&quot;)$usageKey, limit=1e4)$data %&gt;% 
+  write_csv(&quot;data/Pleocomidae_gbif.csv&quot;)
+
+Coleoptera.gbif.flood &lt;- map_dfr(set_names(beetle_taxa)[-2], .id=&quot;taxon&quot;,
+                                 ~ occ_search(taxonKey = name_backbone(.x)$usageKey, geometry=st_as_text(flood.sf), limit=1e4)$data) %&gt;%  
+  write_csv(&quot;data/Coleoptera_gbif_flood.csv.gz&quot;)</code></pre>
+<p>Add hand-annotated localities, coordinates, and uncertainty estimates
+for rain beetle occurrences.</p>
+<pre class="r"><code>#Sheet with JP&#39;s hand-annotated localities, coordinates, and uncertainty estimates
+Pleocomidae.gbif.newloc &lt;- read_csv(&quot;data/Pleocoma log - GBIF20231110newloc.csv&quot;) %&gt;%
+  select(gbifID, newLocality,   newLocalityScale,   newCoordinateUncertaintyInMeters,   newLatLong) %&gt;% 
+  separate(newLatLong, into=c(&quot;newLat&quot;,&quot;newLong&quot;), sep=&quot;, &quot;, convert=T)
+
+#Replace some GBIF data with hand annotations
+Pleocomidae.gbif.fix &lt;- read_csv(&quot;data/Pleocomidae_gbif.csv&quot;, guess_max = 2000, col_types=list(recordNumber=col_character())) %&gt;% 
+  left_join(Pleocomidae.gbif.newloc) %&gt;% 
+  mutate(locality=if_else(!is.na(newLocality), newLocality, locality),
+         decimalLatitude=if_else(!is.na(newLat), newLat, decimalLatitude),
+         decimalLongitude=if_else(!is.na(newLat), newLong, decimalLongitude),
+         coordinateUncertaintyInMeters=if_else(!is.na(newCoordinateUncertaintyInMeters), 
+                                               newCoordinateUncertaintyInMeters, coordinateUncertaintyInMeters), 
+         taxon = &quot;Pleocomidae&quot;, .keep=&quot;unused&quot;)
+
+#filter out uncertain coordinates, including vague localities (&gt;10 km uncertainty) and obscured iNat coordinates
+Pleocomidae.gbif.goodcoords &lt;- Pleocomidae.gbif.fix %&gt;% 
+  drop_na(decimalLongitude) %&gt;% 
+  filter(decimalLongitude &lt; -100, #drop fossils in Asia
+    is.na(coordinateUncertaintyInMeters) | coordinateUncertaintyInMeters &lt;= 10000)
+
+#Convert to spatial objects
+Pleocomidae.gbif.sf &lt;- Pleocomidae.gbif.goodcoords %&gt;% 
+  st_as_sf(coords=c(&quot;decimalLongitude&quot;,&quot;decimalLatitude&quot;), crs=mycrs)
+Pleocomidae.gbif.flood &lt;- st_intersection(Pleocomidae.gbif.sf, flood.sf)
+
+gbif.flood &lt;- read_csv(&quot;data/Coleoptera_gbif_flood.csv.gz&quot;, guess_max=20000, col_types=list(georeferencedDate=col_character())) %&gt;% 
+  st_as_sf(coords=c(&quot;decimalLongitude&quot;,&quot;decimalLatitude&quot;), crs=mycrs) %&gt;%
+  bind_rows(Pleocomidae.gbif.flood)</code></pre>
+</div>
+<div id="elevations" class="section level1">
+<h1>Elevations</h1>
+<p>Get elevations of all occurrences and a raster elevation map of the
+flood area.</p>
+<pre class="r"><code>library(elevatr)
+#zoom level sets resolution, see https://github.com/tilezen/joerd/blob/master/docs/data-sources.md#what-is-the-ground-resolution
+Pleocomidae.gbif.sf %&gt;% select(geometry, gbifID) %&gt;% 
+  get_elev_point(src = &quot;aws&quot;, z=8) %&gt;% as_tibble() %&gt;% write_csv(&quot;data/Pleocomidae_gbif_elev.csv&quot;)
+gbif.flood %&gt;% select(geometry, gbifID) %&gt;% 
+  get_elev_point(src = &quot;aws&quot;, z=11) %&gt;% as_tibble() %&gt;% write_csv(&quot;data/gbif_flood_elev.csv&quot;)</code></pre>
+<pre class="r"><code>library(terra)
+library(tidyterra)
+library(elevatr)
+flood.raster &lt;- get_elev_raster(gbif.flood, src = &quot;aws&quot;, z=8) %&gt;% rast() %&gt;% crop(ext(unlist(flood)))</code></pre>
+<p>Export <a href="./data/Pleocomidae_gbif_flood.csv">table of rain
+beetle occurrences in the flood area</a> for use in Google Earth.</p>
+<p>Imported the CSV and followed <a
+href="https://googleearthdesign.blogspot.com/2011/01/flood-simulation-howto.html">these
+steps</a> for flooding an area in Google Earth to produce this <a
+href="./data/Pleocomidae_gbif_flood.kml">KML file</a>.</p>
+<pre class="r"><code>Pleocomidae.gbif.sf &lt;- Pleocomidae.gbif.sf %&gt;% select(-elevation) %&gt;% left_join(read_csv(&quot;data/Pleocomidae_gbif_elev.csv&quot;, col_select = -geometry))
+gbif.flood &lt;- gbif.flood %&gt;% select(-elevation) %&gt;% left_join(read_csv(&quot;data/gbif_flood_elev.csv&quot;, col_select = -geometry) %&gt;% distinct(gbifID, .keep_all = T))
+
+Pleocomidae.gbif.flood &lt;- bind_cols(as_tibble(gbif.flood), st_coordinates(gbif.flood)) %&gt;% 
+  filter(taxon ==&quot;Pleocomidae&quot;) %&gt;% 
+  select(gbifID, family, species, infraspecificEpithet, sex, eventDate, 
+         decimalLatitude=Y, decimalLongitude=X, coordinateUncertaintyInMeters, elevation,
+         locality, newLocalityScale, institutionCode, references, occurrenceRemarks, identificationRemarks) %&gt;% 
+  write_csv(&quot;data/Pleocomidae_gbif_flood.csv&quot;)
+
+library(knitr)
+Pleocomidae.gbif.flood %&gt;% filter(elevation &lt;= maxflood, decimalLatitude&gt;43.7) %&gt;% arrange(desc(decimalLatitude)) %&gt;% 
+  kable(caption=&quot;Rain beetles found at or below the highest flood&quot;)</code></pre>
+<table>
+<caption>Rain beetles found at or below the highest flood</caption>
+<colgroup>
+<col width="1%" />
+<col width="2%" />
+<col width="3%" />
+<col width="3%" />
+<col width="0%" />
+<col width="3%" />
+<col width="2%" />
+<col width="2%" />
+<col width="5%" />
+<col width="1%" />
+<col width="5%" />
+<col width="3%" />
+<col width="2%" />
+<col width="13%" />
+<col width="33%" />
+<col width="13%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">gbifID</th>
+<th align="left">family</th>
+<th align="left">species</th>
+<th align="left">infraspecificEpithet</th>
+<th align="left">sex</th>
+<th align="left">eventDate</th>
+<th align="right">decimalLatitude</th>
+<th align="right">decimalLongitude</th>
+<th align="right">coordinateUncertaintyInMeters</th>
+<th align="right">elevation</th>
+<th align="left">locality</th>
+<th align="left">newLocalityScale</th>
+<th align="left">institutionCode</th>
+<th align="left">references</th>
+<th align="left">occurrenceRemarks</th>
+<th align="left">identificationRemarks</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">4425380958</td>
+<td align="left">Pleocomidae</td>
+<td align="left">Pleocoma dubitabilis</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="right">45.52036</td>
+<td align="right">-123.1640</td>
+<td align="right">200</td>
+<td align="right">91</td>
+<td align="left">2.5 miles W Forest Grove</td>
+<td align="left">bearing from town</td>
+<td align="left">TAMU</td>
+<td align="left"><a
+href="https://scan-bugs.org:443/portal/collections/individual/index.php?occid=49272004"
+class="uri">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=49272004</a></td>
+<td align="left">NA</td>
+<td align="left">dubitablis</td>
+</tr>
+<tr class="even">
+<td align="right">4424622651</td>
+<td align="left">Pleocomidae</td>
+<td align="left">Pleocoma dubitabilis</td>
+<td align="left">dubitabilis</td>
+<td align="left">NA</td>
+<td align="left">2023-10-09 12:00:00</td>
+<td align="right">45.48513</td>
+<td align="right">-123.2337</td>
+<td align="right">4</td>
+<td align="right">95</td>
+<td align="left">Hagg Lake</td>
+<td align="left">NA</td>
+<td align="left">iNaturalist</td>
+<td align="left"><a
+href="https://www.inaturalist.org/observations/186885017"
+class="uri">https://www.inaturalist.org/observations/186885017</a></td>
+<td align="left">beetle at Hagg Lake</td>
+<td align="left">Nice male and female .</td>
+</tr>
+<tr class="odd">
+<td align="right">4006502610</td>
+<td align="left">Pleocomidae</td>
+<td align="left">Pleocoma dubitabilis</td>
+<td align="left">dubitabilis</td>
+<td align="left">NA</td>
+<td align="left">2022-10-28 10:50:21</td>
+<td align="right">45.48343</td>
+<td align="right">-123.2329</td>
+<td align="right">739</td>
+<td align="right">92</td>
+<td align="left">Hagg Lake - coords in water</td>
+<td align="left">NA</td>
+<td align="left">iNaturalist</td>
+<td align="left"><a
+href="https://www.inaturalist.org/observations/140305299"
+class="uri">https://www.inaturalist.org/observations/140305299</a></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+</tr>
+<tr class="even">
+<td align="right">3391643880</td>
+<td align="left">Pleocomidae</td>
+<td align="left">Pleocoma dubitabilis</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">2021-10-10 08:38:42</td>
+<td align="right">45.47112</td>
+<td align="right">-123.2145</td>
+<td align="right">6</td>
+<td align="right">96</td>
+<td align="left">Hagg Lake</td>
+<td align="left">NA</td>
+<td align="left">iNaturalist</td>
+<td align="left"><a
+href="https://www.inaturalist.org/observations/97781354"
+class="uri">https://www.inaturalist.org/observations/97781354</a></td>
+<td align="left">Many walking on the forest floor. Even females were
+out! I dug little bit of burrows males were congregating but couldn’t
+find female. I probably need to dig deeper to see the female in
+burrow.</td>
+<td align="left">NA</td>
+</tr>
+<tr class="odd">
+<td align="right">2981022755</td>
+<td align="left">Pleocomidae</td>
+<td align="left">Pleocoma dubitabilis</td>
+<td align="left">NA</td>
+<td align="left">MALE</td>
+<td align="left">2020-10-31 06:54:59</td>
+<td align="right">45.47095</td>
+<td align="right">-123.2153</td>
+<td align="right">16</td>
+<td align="right">100</td>
+<td align="left">Hagg Lake</td>
+<td align="left">NA</td>
+<td align="left">iNaturalist</td>
+<td align="left"><a
+href="https://www.inaturalist.org/observations/63905041"
+class="uri">https://www.inaturalist.org/observations/63905041</a></td>
+<td align="left">This one was dead.</td>
+<td align="left">NA</td>
+</tr>
+<tr class="even">
+<td align="right">4006659583</td>
+<td align="left">Pleocomidae</td>
+<td align="left">Pleocoma dubitabilis</td>
+<td align="left">dubitabilis</td>
+<td align="left">NA</td>
+<td align="left">2022-10-28 10:29:26</td>
+<td align="right">45.47047</td>
+<td align="right">-123.2201</td>
+<td align="right">5</td>
+<td align="right">96</td>
+<td align="left">Hagg Lake</td>
+<td align="left">NA</td>
+<td align="left">iNaturalist</td>
+<td align="left"><a
+href="https://www.inaturalist.org/observations/140278447"
+class="uri">https://www.inaturalist.org/observations/140278447</a></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+</tr>
+<tr class="odd">
+<td align="right">3947703573</td>
+<td align="left">Pleocomidae</td>
+<td align="left">Pleocoma dubitabilis</td>
+<td align="left">dubitabilis</td>
+<td align="left">NA</td>
+<td align="left">2022-10-23 09:19:33</td>
+<td align="right">45.47036</td>
+<td align="right">-123.2129</td>
+<td align="right">4</td>
+<td align="right">99</td>
+<td align="left">Hagg Lake</td>
+<td align="left">NA</td>
+<td align="left">iNaturalist</td>
+<td align="left"><a
+href="https://www.inaturalist.org/observations/139762733"
+class="uri">https://www.inaturalist.org/observations/139762733</a></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+</tr>
+<tr class="even">
+<td align="right">3385136078</td>
+<td align="left">Pleocomidae</td>
+<td align="left">Pleocoma dubitabilis</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">2021-10-02 06:14:44</td>
+<td align="right">45.46984</td>
+<td align="right">-123.2128</td>
+<td align="right">48</td>
+<td align="right">106</td>
+<td align="left">Hagg Lake</td>
+<td align="left">NA</td>
+<td align="left">iNaturalist</td>
+<td align="left"><a
+href="https://www.inaturalist.org/observations/96885626"
+class="uri">https://www.inaturalist.org/observations/96885626</a></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+</tr>
+<tr class="odd">
+<td align="right">3415689326</td>
+<td align="left">Pleocomidae</td>
+<td align="left">Pleocoma dubitabilis</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">2021-11-10 09:17:03</td>
+<td align="right">44.92119</td>
+<td align="right">-123.0507</td>
+<td align="right">22</td>
+<td align="right">102</td>
+<td align="left">Fairmount Park, Salem</td>
+<td align="left">NA</td>
+<td align="left">iNaturalist</td>
+<td align="left"><a
+href="https://www.inaturalist.org/observations/101131656"
+class="uri">https://www.inaturalist.org/observations/101131656</a></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+</tr>
+<tr class="even">
+<td align="right">3067618704</td>
+<td align="left">Pleocomidae</td>
+<td align="left">Pleocoma dubitabilis</td>
+<td align="left">NA</td>
+<td align="left">MALE</td>
+<td align="left">2019-12-14 09:48:26</td>
+<td align="right">44.87821</td>
+<td align="right">-123.1376</td>
+<td align="right">110</td>
+<td align="right">70</td>
+<td align="left">Sawmill Rd, Salem</td>
+<td align="left">NA</td>
+<td align="left">iNaturalist</td>
+<td align="left"><a
+href="https://www.inaturalist.org/observations/36647406"
+class="uri">https://www.inaturalist.org/observations/36647406</a></td>
+<td align="left">NA</td>
+<td align="left">Appearance and locality . 6 lams . Cheers ! Gene
+St. Denis Sierra Nevada Research</td>
+</tr>
+<tr class="odd">
+<td align="right">4425398914</td>
+<td align="left">Pleocomidae</td>
+<td align="left">Pleocoma dubitabilis</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="right">44.65699</td>
+<td align="right">-123.2353</td>
+<td align="right">2000</td>
+<td align="right">122</td>
+<td align="left">N. of Corvallis, Peavy Arboretum</td>
+<td align="left">property</td>
+<td align="left">TAMU</td>
+<td align="left"><a
+href="https://scan-bugs.org:443/portal/collections/individual/index.php?occid=49272003"
+class="uri">https://scan-bugs.org:443/portal/collections/individual/index.php?occid=49272003</a></td>
+<td align="left">NA</td>
+<td align="left">dubitablis</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="maps" class="section level1">
+<h1>Maps</h1>
+<pre class="r"><code>ggplot(Pleocomidae.gbif.sf) + 
+  geom_polygon(data = map_data(&quot;state&quot;), aes(x = long, y = lat, group = group)) +
+  geom_sf(aes(color=species)) + coord_sf(xlim=c(-125, -115), ylim=c(30, 50)) + theme_void()</code></pre>
+<p><img src="images/map_all-1.png" width="960" /></p>
+<pre class="r"><code>ggplot(Pleocomidae.gbif.sf, aes(x=elevation, fill=species)) + facet_wrap(vars(species), scales=&quot;free_y&quot;) + 
+  geom_histogram(binwidth=100) + guides(fill=&quot;none&quot;)</code></pre>
+<p><img src="images/map_all-2.png" width="960" /></p>
+<pre class="r"><code>ggplot(Pleocomidae.gbif.sf %&gt;% filter(stateProvince!=&quot;California&quot;)) + 
+  geom_polygon(data = map_data(&quot;state&quot;), aes(x = long, y = lat, group = group), fill = &quot;grey95&quot;, color = &quot;gray40&quot;) +
+  geom_sf(aes(color=species)) + coord_sf(xlim=c(-125, -120), ylim=c(42.5, 47)) + theme_void() </code></pre>
+<p><img src="images/map_NW-1.png" width="672" /></p>
+<pre class="r"><code>land &lt;- colorRampPalette(rev(brewer.pal(4, &quot;Greys&quot;)))
+flooded &lt;- colorRampPalette(brewer.pal(4, &quot;Blues&quot;))
+
+ggplot(gbif.flood) + 
+  geom_spatraster(data=flood.raster)+ 
+  geom_sf(aes(color=taxon, alpha=taxon==&quot;Pleocomidae&quot;), shape=19)+  
+  theme_void() + guides(alpha=&quot;none&quot;, fill=&quot;none&quot;) + scale_color_manual(&quot;&quot;, values=beetle_pal)</code></pre>
+<p><img src="images/map_flood-1.png" width="960" /></p>
+<pre class="r"><code>ggplot(gbif.flood %&gt;% filter(taxon==&quot;Pleocomidae&quot;)) + 
+  geom_spatraster(data=flood.raster)+ 
+  scale_fill_gradientn(colors=c(flooded(maxflood-minmax(flood.raster)[1]), land(minmax(flood.raster)[2]-maxflood)))+
+  scale_color_manual(values=c(&quot;black&quot;,&quot;white&quot;)) + scale_shape_manual(values=19)+
+  geom_sf(aes(color=elevation&gt;maxflood))+#, shape = if_else(elevation&gt;maxflood, &quot;1&quot;,NA))) + 
+  #geom_sf_text(aes(color=elevation&gt;maxflood, label=if_else(elevation&lt;maxflood, elevation - maxflood,NA)))+
+  theme_void() + guides(color=&quot;none&quot;,fill=&quot;none&quot;, shape=&quot;none&quot;)</code></pre>
+<p><img src="images/map_flood-2.png" width="960" /></p>
+<pre class="r"><code>flood.north &lt;- data.frame(x = c(-123.5, -122.4), y = c(44.5,45.7))
+flood.raster.north &lt;- flood.raster %&gt;% crop(ext(unlist(flood.north)))
+ggplot(gbif.flood %&gt;% filter(taxon==&quot;Pleocomidae&quot;)) + 
+  geom_spatraster(data=flood.raster.north) +
+  scale_fill_gradientn(colors=c(flooded(maxflood-minmax(flood.raster.north)[1]), land(minmax(flood.raster.north)[2]-maxflood)))+
+  scale_color_manual(values=c(&quot;black&quot;,&quot;white&quot;)) + scale_shape_manual(values=19)+
+  geom_sf(aes(color=elevation&gt;maxflood))+#, shape = if_else(elevation&gt;maxflood, &quot;1&quot;,NA))) + 
+  #geom_sf_text(aes(color=elevation&gt;maxflood, label=if_else(elevation&lt;maxflood, elevation - maxflood,NA)))+
+  theme_void() + guides(color=&quot;none&quot;,fill=&quot;none&quot;, shape=&quot;none&quot;) +
+  coord_sf(ylim=flood.north$y, xlim=flood.north$x)</code></pre>
+<p><img src="images/map_flood-3.png" width="960" /></p>
+</div>
+<div id="elevation-distribution" class="section level1">
+<h1>Elevation distribution</h1>
+<p>Elevation distributions of beetle observations:</p>
+<ol style="list-style-type: decimal">
+<li>Raw counts at each elevation</li>
+<li>Divided by land area at each elevation</li>
+<li>Divided by total beetle observations at each elevation</li>
+</ol>
+<pre class="r"><code>gbif.elev.compare &lt;- bind_rows(bind_cols(as_tibble(gbif.flood), st_coordinates(gbif.flood)) %&gt;% 
+                                 distinct(taxon, elevation, X, Y), #takes out some collections that have multiple records for the same spot
+                               tibble(taxon=&quot;area&quot;, elevation = sample(values(flood.raster), 2e4)))
+
+ggplot(gbif.elev.compare, aes(x=elevation, fill=taxon)) + facet_wrap(vars(taxon), scales=&quot;free_y&quot;, ncol=1) + 
+  geom_histogram(binwidth=maxflood/res, boundary=maxflood) +  geom_vline(xintercept=maxflood) + 
+  guides(fill=&quot;none&quot;)  + scale_x_continuous(n.breaks = 13) + coord_cartesian(xlim=c(NA,maxflood*10)) + theme_minimal() +
+  labs(x=&quot;Elevation (m)&quot;, y=&quot;Occurrences&quot;, title=&quot;Elevation distribution of beetle records and land in flood region&quot;) +
+  scale_fill_manual(values=c(beetle_pal,area=&quot;black&quot;))</code></pre>
+<p><img src="images/sampling-1.png" width="672" /></p>
+<pre class="r"><code>gbif.elev.perarea &lt;- gbif.elev.compare %&gt;% 
+  mutate(elev.binned = (cut(elevation, breaks = seq(0, maxflood*10, by=maxflood/res), labels=F)-1)*maxflood/res) %&gt;% 
+  count(taxon, elev.binned) %&gt;% pivot_wider(names_from=taxon, values_from=n) %&gt;% 
+  mutate(across(-elev.binned, ~replace_na(.x/area,0))) %&gt;% select(-area)
+
+gbif.elev.perarea %&gt;% pivot_longer(all_of(beetle_taxa), names_to = &quot;taxon&quot;, values_to=&quot;obs_per_area&quot;) %&gt;% 
+  ggplot(aes(x=elev.binned, fill=taxon, y=obs_per_area)) + facet_wrap(vars(taxon), scales=&quot;free_y&quot;, ncol=1) + 
+  geom_col(just=0)+ geom_vline(xintercept=maxflood) + 
+  guides(fill=&quot;none&quot;) + scale_x_continuous(n.breaks = 13) + coord_cartesian(xlim=c(NA,maxflood*10)) + theme_minimal() +
+  labs(x=&quot;Elevation (m)&quot;, y=&quot;Occurrences per area&quot;, title=&quot;Records of beetles per land area&quot;)+
+  scale_fill_manual(values=beetle_pal)</code></pre>
+<p><img src="images/sampling-2.png" width="672" /></p>
+<pre class="r"><code>gbif.elev.perarea %&gt;% filter(Coleoptera&gt;0) %&gt;% 
+  mutate(across(-elev.binned, ~.x/Coleoptera)) %&gt;% select(-Coleoptera) %&gt;% 
+  pivot_longer(any_of(beetle_taxa), names_to = &quot;taxon&quot;, values_to=&quot;obs_per_beetle&quot;) %&gt;% 
+  ggplot(aes(x=elev.binned, fill=taxon, y=obs_per_beetle)) + facet_wrap(vars(taxon), scales=&quot;free_y&quot;, ncol=1) + 
+  geom_col(just=0)+ geom_vline(xintercept=maxflood) + 
+  guides(fill=&quot;none&quot;) + scale_x_continuous(n.breaks = 13) + coord_cartesian(xlim=c(NA,maxflood*10)) + theme_minimal() +
+  labs(x=&quot;Elevation (m)&quot;, y=&quot;Occurrences per beetle occurrence&quot;, title=&quot;Records of beetles relative to total records&quot;)+
+  scale_fill_manual(values=beetle_pal)</code></pre>
+<p><img src="images/sampling-3.png" width="672" /></p>
+</div>
+<div id="seasonality" class="section level1">
+<h1>Seasonality</h1>
+<pre class="r"><code>Pleocomidae.gbif.goodcoords %&gt;% 
+  mutate(region= cut(decimalLatitude, c(0,35,42,90), labels=c(&quot;SoCal&quot;,&quot;NorCal&quot;,&quot;Oregon&quot;)),
+         month = month(eventDate, label=T))%&gt;% drop_na(month) %&gt;% 
+  ggplot(aes(x=month, fill=region)) + facet_wrap(vars(region), ncol=1, scales=&quot;free_y&quot;) +
+  geom_bar() + labs(x=&quot;Month&quot;, y=&quot;Occurrences&quot;, title=&quot;Rain beetle emergence by region&quot;) + theme_minimal() + guides(fill=&quot;none&quot;)</code></pre>
+<p><img src="images/seasons-1.png" width="672" /></p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
